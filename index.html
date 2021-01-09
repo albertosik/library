@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" type="text/css" href="style.css">
+<link rel="stylesheet" type="text/css" href="modal.css">
+</head>
+
+<body>	
+	<div class="nav"></div>
+
+	<div class="header">
+		<h1>all books:</h1>
+		<div><button class="new show-modal" data-target="form">New book</button></div>
+	</div>
+	<div class="filter">
+		<div class="sort-field">
+			<label for="sort">Sort by</label>
+			<select id="sort">
+				<option value="title">Title</option>
+				<option value="author">Author</option>
+				<option value="quantity">Quantity</option>
+			</select>
+			<button class="sort">Sort</button>
+		</div>
+		<div class="search-field">
+			<label for="search">Search</label>
+			<input id="search">
+			<button class="search">Search</button>
+		</div>
+	</div>
+	<div class="table-wrap">
+	</div>
+
+	<div class="modal" id="form">
+		<div class="form-wrap">
+		</div>
+	</div>
+
+	<script src="modal.js"></script>
+	<script src="form.js"></script>	
+	<script src="script.js"></script>		
+</body>
+</html>
+

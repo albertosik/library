@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" type="text/css" href="style.css">
+<link rel="stylesheet" type="text/css" href="modal.css">
+</head>
+
+<body>	
+	<div class="nav"></div>
+
+	<div class="header">
+		<h1>all cards:</h1>
+		<div><button class="new show-modal" data-target="form">New card</button></div>
+	</div>
+	<div class="filter">
+		<div class="sort-field">
+			<label for="sort">Sort by</label>
+			<select id="sort">
+				<option value="borrow_date">Borrow date</option>
+				<option value="return_date">Return date</option>				
+			</select>
+			<button class="sort">Sort</button>
+		</div>
+		<div class="search-field">
+		</div>
+	</div>
+	<div class="table-wrap">
+	</div>
+
+	<div class="modal" id="form">
+		<div class="form-wrap">
+		</div>
+	</div>
+
+	<script src="modal.js"></script>
+	<script src="form.js"></script>	
+	<script src="script.js"></script>	
+</body>
+</html>
+

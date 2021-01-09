@@ -1,0 +1,142 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.nav{
+    padding: 20px;
+    background: #555;
+}
+
+.nav a{
+    color: #fff;
+    text-decoration: none;
+    margin: 10px;
+    font-size: 20px;
+    font-family: sans-serif;
+}
+
+.header{
+    display: flex;
+    padding: 20px;
+    justify-content: space-between;
+}
+
+.header h1{
+    text-transform: uppercase;
+    font-size: 20px;
+    color: #2196F3;
+    margin: 10px;
+}
+
+.filter{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px 0 25px;
+}
+
+.filter input,.filter select,.filter button{
+    padding: 5px;;
+}
+
+
+/*.sort-field{
+
+}
+
+.search-field{
+
+}*/
+
+.table-wrap{
+    padding: 25px;
+}
+
+.table{
+    width: 100%;
+    border-spacing: 0;
+}
+
+.table tr:hover td{
+    background-color: rgb(245, 245, 245);
+}
+
+.table td, .table th{
+    /*border-top: 1px solid #ccc;*/
+    border-bottom: 1px solid #ccc;
+    padding: 10px;
+}
+
+.table td.number{
+    text-align: center;
+}
+
+.table td button{
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+button.new{
+    padding: 5px;
+}
+
+.form-wrap{
+    background: #eee;
+    padding: 50px;
+    width: 500px;    
+    border-radius: 2px;
+}
+
+.form-wrap .input{
+    padding: 10px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.form-wrap .input .error{
+    width: 150px;
+    color: maroon;
+}
+
+.form-wrap .input input{
+    padding: 4px;
+}
+
+.form-wrap .input label{
+    width: 120px;
+    display: inline-block;
+    text-align: right;
+    padding-right: 10px;
+}
+
+.form-wrap .input button{
+    padding: 5px;
+}
+
+.form-wrap .input select{
+    padding: 5px;
+    width: 180px;
+}
+
+.stat{
+    display: flex;
+}
+
+.stat h2{
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.stat .books, .stat .visitors{
+    flex-basis: 50%;
+    margin: 20px;
+    padding: 10px;
+}
+
+.stat .books table, .stat .visitors table{
+    width: 100%;
+}
+
+.stat .books td, .stat .visitors td{
+    border-bottom: 1px solid #ccc;
+    padding: 5px;
+}
