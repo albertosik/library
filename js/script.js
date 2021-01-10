@@ -2,9 +2,13 @@ const config = { storage: "local" };
 
 class LocalStorage {
   select(entity, options = {}) {
-    let result = JSON.parse(localStorage.getItem(entity));
+    let result = JSON.parse(localStorage.getItem(entity));    
     if('sort' in options){
-      result.data.sort( (a,b) => a[options.sort] > b[options.sort]?1:-1);
+      if(options.sort == 'id'){
+        result.data.sort( (a,b) => a[options.sort] - b[options.sort]);
+      } else {
+        result.data.sort( (a,b) => a[options.sort] > b[options.sort]?1:-1);
+      }      
     }            
     if('search' in options){
       result.data = result.data.filter(function(row){        
