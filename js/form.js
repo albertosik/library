@@ -1,3 +1,10 @@
+/**
+* form.js v1.0
+* 19.01.2021
+* Albert Ohanesian
+* classes for form generation and validation
+*/
+"use strict";
 class Validator{
 	notEmpty(value){
 		return value.length>0?true:false;

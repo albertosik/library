@@ -1,4 +1,5 @@
 ;
+"use strict";
 class Modal{
   constructor(){
     this.showButtons = document.querySelectorAll('.show-modal');    

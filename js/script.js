@@ -1,3 +1,10 @@
+/**
+* script.js v1.0
+* 19.01.2021
+* Albert Ohanesian
+* application 
+*/
+"use strict";
 const config = { storage: "local" };
 
 class LocalStorage {
